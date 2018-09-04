@@ -5,7 +5,7 @@ Provision Local Mac OsX
   * Update the Desired Tools and Apps  
     *  playbooks/group_vars/all.yml 
     *  Current List:  
-    
+
  cli_tools:
   - autojump
   - ctags
@@ -45,8 +45,8 @@ cask_apps:
 ## Run the Setup
   `./scripts/setup.sh`
 
-### Limit Which Tasks to Run  ["cli", "apps","dotfiles"]
+### Limit Which Tasks to Run  ["cli","apps","dotfiles"]
   `./scripts/setup.sh -t "cli,apps"`
 
-### To Exclude Tasks ["cli", "apps","dotfiles"]
+### To Exclude Tasks ["cli","apps","dotfiles"]
   `./scripts/setup.sh -e "dotfiles"`
