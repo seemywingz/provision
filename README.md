@@ -1,11 +1,7 @@
-Provision Local Mac OSx
+Provision Local Mac OsX
 =====================================
 
 ### Prerequisites  
-  * Install Homebrew  
-    * `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-  * Install ansible  
-    * `brew install ansible`  
   * Update the Desired Tools and Apps  
     *  playbooks/group_vars/all.yml 
     * Current List: 
@@ -45,11 +41,11 @@ cask_apps:
   - visual-studio-code-insiders
   - zeplin
 
-### Run the Playbook
-  `ansible-playbook playbooks/provision.yml`
+## Run the Setup
+  `./scripts/setup.sh`
 
-### Limit With Tags ["cli", "apps","dotfiles"]
-  `ansible-playbook playbooks/provision.yml --tags cli`
+### Limit Which Tasks to Run  ["cli", "apps","dotfiles"]
+  `./scripts/setup.sh -t "cli,apps"`
 
 ### To Exclude Tasks ["cli", "apps","dotfiles"]
-  `ansible-playbook playbooks/provision.yml --exclude dotfiles`
+  `./scripts/setup.sh -e "dotfiles"`
