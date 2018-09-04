@@ -1,0 +1,4 @@
+# Inventory File for Ansible
+
+[machines]
+localhost

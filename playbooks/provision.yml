@@ -1,0 +1,11 @@
+# EMN DevOps initializer
+
+- name: Provision Mac
+  hosts: localhost
+  connection: local
+  gather_facts: no
+  roles:
+    - { role: cli, tags: [ 'init', 'cli' ]  }
+    - { role: apps, tags: [ 'init', 'apps' ]  }
+    - { role: dotfiles, tags: [ 'init', 'dotfiles' ]  }
+    # - { role: personalize, tags: [ 'init', 'colors' ]  }

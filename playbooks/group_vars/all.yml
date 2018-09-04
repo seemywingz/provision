@@ -1,0 +1,49 @@
+# Maintainer: Kevin Jayne
+
+system_user: kevin.jayne
+
+repo_path: ~/my/repo
+
+dotfiles:
+  path: "{{ repo_path }}/dotfiles"
+  sources:
+    - { src: '.zshrc', dest: '.zshrc'}
+    - { src: '.vimrc', dest: '.vimrc'}
+    - { src: 'ssh.config', dest: '.ssh/config'}
+
+cli_tools:
+  - autojump
+  - ctags
+  - coreutils
+  - curl 
+  - fswatch
+  - git
+  - git-town
+  - go
+  - htop
+  - jq
+  - neovim
+  - nmap
+  - shellcheck
+  - tcptrack
+  - tree
+  - watch
+  - wget
+  - yarn
+  - zsh
+
+cask_apps:
+  - 1password
+  - docker
+  - firefox
+  - google-chrome
+  - iterm2
+  - postman
+  - sequel-pro
+  - slack
+  - spotify
+  - viscosity
+  - visual-studio-code-insiders
+  - zeplin
+  # - virtualbox
+  # - vagrant
