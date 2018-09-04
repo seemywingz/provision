@@ -6,6 +6,7 @@
   homebrew_cask:
     name: "{{item}}"
     state: "present"
-    update_homebrew: "yes"
+    update_homebrew: yes
   with_items:
     - "{{ cask_apps }}"
+  ignore_errors: yes

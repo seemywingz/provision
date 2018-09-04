@@ -1,7 +1,19 @@
 #!/bin/bash
 
-rootDir="$(cd "$(dirname "$0")" && pwd)"
 ansibleOptions=""
+while getopts 't:e:' flag; do
+  case "${flag}" in
+    t) 
+      ansibleOptions="${ansibleOptions} --tags ${OPTARG}"
+      ;;
+    e) 
+      ansibleOptions="${ansibleOptions} --skip-tags ${OPTARG}"
+      ;;
+    *) 
+      error "Unexpected option ${flag}" 
+      ;;
+  esac
+done	
 
 exitOnError () {
   exitCode=$1
@@ -13,20 +25,6 @@ isInstalled () {
   app=$1
   [[ -x "$(command -v ${app})" ]] && true || false
 }
-
-while getopts 't:e:' flag; do
-    case "${flag}" in
-      t) 
-        ansibleOptions="${ansibleOptions} --tags ${OPTARG}"
-        ;;
-      e) 
-        ansibleOptions="${ansibleOptions} --skip-tags ${OPTARG}"
-        ;;
-      *) 
-        error "Unexpected option ${flag}" 
-        ;;
-    esac
-  done	
 
 if ! isInstalled brew; then
   msg="Installing Homebrew"

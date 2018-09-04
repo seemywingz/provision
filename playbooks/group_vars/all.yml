@@ -1,9 +1,5 @@
 # Maintainer: Kevin Jayne
 
-system_user: kevin.jayne
-
-repo_path: ~/my/repo
-
 dotfiles:
   path: "{{ repo_path }}/dotfiles"
   sources:
@@ -37,13 +33,15 @@ cask_apps:
   - docker
   - firefox
   - google-chrome
+  - intellij-idea
   - iterm2
   - postman
   - sequel-pro
   - slack
   - spotify
-  - viscosity
+  - tunnelblick
   - visual-studio-code-insiders
   - zeplin
+  # - viscosity
   # - virtualbox
   # - vagrant
