@@ -4,8 +4,8 @@ Provision Local Mac OsX
 ### Prerequisites  
   * Update the Desired Tools and Apps  
     *  playbooks/group_vars/all.yml 
-    *  Current List: 
-  
+    *  Current List:  
+    
  cli_tools:
   - autojump
   - ctags
