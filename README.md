@@ -4,9 +4,9 @@ Provision Local Mac OsX
 ### Prerequisites  
   * Update the Desired Tools and Apps  
     *  playbooks/group_vars/all.yml 
-    * Current List: 
+    *  Current List: 
   
-  cli_tools:
+ cli_tools:
   - autojump
   - ctags
   - coreutils
@@ -32,12 +32,13 @@ cask_apps:
   - docker
   - firefox
   - google-chrome
+  - intellij-idea
   - iterm2
   - postman
   - sequel-pro
   - slack
   - spotify
-  - viscosity
+  - tunnelblick
   - visual-studio-code-insiders
   - zeplin
 
