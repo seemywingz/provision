@@ -1,11 +1,12 @@
 # Maintainer: Kevin Jayne
 
 repos:
-  dir: ~/git
-  docker-infra: github.com:WeConnect/redt-docker-infra.git
+  local_dir: ~/git
+  sources:
+    - { src: 'github.com:WeConnect/redt-docker-infra.git', dest: 'redt-docker-infra'}
+    - { src: 'github.com:WeConnect/redt-onelogin-aws-saml', dest: 'redt-onelogin-aws-saml'}
 
 dotfiles:
-  path: "{{ repo_path }}/dotfiles"
   sources:
     - { src: '.zshrc', dest: '.zshrc'}
     - { src: '.vimrc', dest: '.vimrc'}
