@@ -8,7 +8,7 @@ Provision Local Mac OsX for RedTech Kotlin Development
 
   * Use This Script to Get Things Started:
       * In RedTech we perfer the dir ~/git for Git repository clones. This is where you will do your work  
-  * Copy and Run This in Your Terminal  
+      * Copy and Run This in Your Terminal  
   ```bash
   initailSetupScript=~/redt-inital-setup.sh
 cat > ${initailSetupScript} <<'EOF'
@@ -97,13 +97,13 @@ The setup script will install both [Homebrew](https://brew.sh/) and [Ansible](ht
 Then Ansible will take care of the rest!
 
 #### Default Setup
-  `./scripts/setup.sh`
+  `~/git/redt-local-setup/scripts/setup.sh`
 
 #### Limit Which Tasks to Run  ["cli","apps","dotfiles"]
-  `./scripts/setup.sh -t "cli,apps"`
+  `~/git/redt-local-setup/scripts/setup.sh -t "cli,apps"`
 
 #### To Exclude Tasks ["cli","apps","dotfiles"]
-  `./scripts/setup.sh -e "dotfiles"`
+  `~/git/redt-local-setup/scripts/setup.sh -e "dotfiles"`
   
 
 # Caveats
