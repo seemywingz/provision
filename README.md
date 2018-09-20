@@ -53,7 +53,8 @@ cask_apps:
 # Caveats
 #### !! Make sure to watch the teminal durring install, your user password is required !! 
 
-#### To change your shell to ZSH
+#### ZSH
+To change your shell to ZSH
 ```shell_session 
 chsh -s /bin/zsh
 ```  
