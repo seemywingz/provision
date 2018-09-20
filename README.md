@@ -41,7 +41,8 @@ cask_apps:
   - zeplin
 
 # Run the Setup
-The setup script will install both [Homebrew](https://brew.sh/) and [Ansible](https://www.ansible.com/overview/how-ansible-works) 
+The setup script will install both [Homebrew](https://brew.sh/) and [Ansible](https://www.ansible.com/overview/how-ansible-works)  
+Then Ansible will take care of the rest!
 
 #### Default Setup
   `./scripts/setup.sh`
