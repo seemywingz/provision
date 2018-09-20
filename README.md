@@ -59,6 +59,11 @@ chsh -s /bin/zsh
 ```  
 
 #### Java8
+If you chose not to use the provided dotfiles, make sure to set the proper JAVA_HOME environment variable  
+```
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+```
+Java8 Brew Caveats
 ```shell_session
 brew cask info java8
 java8: 1.8.0_181-b13,96a7b8442fe848ef90c96a2fad6ed6d1
