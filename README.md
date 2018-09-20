@@ -20,7 +20,6 @@ Provision Local Mac OsX
   - neovim
   - nmap
   - shellcheck
-  - tcptrack
   - tree
   - watch
   - wget
@@ -30,10 +29,9 @@ Provision Local Mac OsX
 cask_apps:
   - 1password
   - docker
-  - firefox
-  - google-chrome
   - intellij-idea
   - iterm2
+  - java8
   - postman
   - sequel-pro
   - slack
