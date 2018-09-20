@@ -2,7 +2,7 @@ Provision Local Mac OsX
 =====================================
 ###### !! Make sure to watch the teminal durring install, your user password is required !! 
 ## Prerequisites  
-  * Update the Desired Tools and Apps  
+  * [Optional] Update the Desired Tools and Apps  
     *  playbooks/group_vars/all.yml 
     *  Current List:  
 
