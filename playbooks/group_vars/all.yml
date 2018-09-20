@@ -7,11 +7,7 @@ dotfiles:
     - { src: '.vimrc', dest: '.vimrc'}
     - { src: 'ssh.config', dest: '.ssh/config'}
 
-openJDK:
-  tap: AdoptOpenJDK/openjdk
-
 cli_tools:
-  - adoptopenjdk-openjdk8
   - autojump
   - ctags
   - coreutils
@@ -25,7 +21,6 @@ cli_tools:
   - neovim
   - nmap
   - shellcheck
-  - tcptrack
   - tree
   - watch
   - wget
@@ -35,10 +30,9 @@ cli_tools:
 cask_apps:
   - 1password
   - docker
-  - firefox
-  - google-chrome
   - intellij-idea
   - iterm2
+  - java8
   - postman
   - sequel-pro
   - slack
@@ -46,6 +40,8 @@ cask_apps:
   - tunnelblick
   - visual-studio-code-insiders
   - zeplin
+  # - firefox
+  # - google-chrome
   # - viscosity
   # - virtualbox
   # - vagrant
