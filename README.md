@@ -59,7 +59,7 @@ chsh -s /bin/zsh
 ```  
 
 #### Java8
-If you chose not to use the provided dotfiles, make sure to set the proper JAVA_HOME environment variable  
+If you chose not to use the provided dotfiles, make sure to set the proper `JAVA_HOME` environment variable  
 ```
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 ```
