@@ -1,5 +1,9 @@
 # Maintainer: Kevin Jayne
 
+repos:
+  dir: ~/git
+  docker-infra: github.com:WeConnect/redt-docker-infra.git
+
 dotfiles:
   path: "{{ repo_path }}/dotfiles"
   sources:
