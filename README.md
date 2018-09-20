@@ -1,7 +1,7 @@
 Provision Local Mac OsX for RedTech Kotlin Development
 =====================================
 ###### !! Make sure to watch the teminal durring install, your user password is required !! 
-## Prerequisites  
+# Prerequisites  
   * Get the following accounts set up:  
       * Github account, with WeConnect access, as a member of the redtech team.  
       * Artifactory account  
