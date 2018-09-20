@@ -1,5 +1,9 @@
 # vim:ft=ansible
 
+- name: Tap OpenJDK
+  homebrew_tap:
+    name: "{{openJDK.tap}}"
+
 - name: Install CLI Tools via Homebrew
   homebrew:
     pkg: "{{ item }}"

@@ -1,6 +1,6 @@
 # EMN DevOps initializer
 
-- name: Provision Mac
+- name: Provision RedTech Mac for Local Development
   hosts: localhost
   connection: local
   gather_facts: no

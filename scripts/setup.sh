@@ -43,6 +43,7 @@ if ! isInstalled ansible; then
   exitOnError $? ${msg}
 fi
 
-echo "Running Setup: ansible-playbook ${ansibleOptions} playbooks/provision.yml"
-ansible-playbook ${ansibleOptions} playbooks/provision.yml 
+ansiblePlaybook="playbooks/provision.yml"
+echo "Running Setup: ansible-playbook ${ansibleOptions} ${ansiblePlaybook}"
+ansible-playbook ${ansibleOptions} ${ansiblePlaybook} 
 exitOnError $? "Running Ansible Playbook"
