@@ -48,7 +48,7 @@ cask_apps:
   - visual-studio-code-insiders
   - zeplin
 
-# Run the Setup
+# Run the Full Setup
 The setup script will install both [Homebrew](https://brew.sh/) and [Ansible](https://www.ansible.com/overview/how-ansible-works)  
 Then Ansible will take care of the rest!
 
