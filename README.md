@@ -78,7 +78,7 @@ export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 ```
 Java8 Brew Caveats 
 ###### As of September 20, 2018 latest Java8 version is: 1.8.0_181
-```bash
+```term
 ==> Caveats
 This Cask makes minor modifications to the JRE to prevent issues with
 packaged applications, as discussed here:
