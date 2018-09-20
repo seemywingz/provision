@@ -40,7 +40,7 @@ export PATH=~/Library/Python/3.6/bin:$PATH
 source $ZSH/oh-my-zsh.sh
 
 # Java
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_161`
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
 # ZSH 
 export HISTSIZE=10000

@@ -1,7 +1,7 @@
 Provision Local Mac OsX
 =====================================
 
-### Prerequisites  
+## Prerequisites  
   * Update the Desired Tools and Apps  
     *  playbooks/group_vars/all.yml 
     *  Current List:  
@@ -40,7 +40,7 @@ cask_apps:
   - visual-studio-code-insiders
   - zeplin
 
-## Run the Setup
+# Run the Setup
   `./scripts/setup.sh`
 
 #### Limit Which Tasks to Run  ["cli","apps","dotfiles"]
@@ -48,8 +48,17 @@ cask_apps:
 
 #### To Exclude Tasks ["cli","apps","dotfiles"]
   `./scripts/setup.sh -e "dotfiles"`
+  
 
-## Caveats
+# Caveats
+#### ¡Make sure to watch the teminal durring install, your user password is required! 
+
+#### To change your shell to ZSH
+```shell_session 
+chsh -s /bin/zsh
+```  
+
+#### Java8
 ```shell_session
 brew cask info java8
 java8: 1.8.0_181-b13,96a7b8442fe848ef90c96a2fad6ed6d1
@@ -71,4 +80,11 @@ to reboot or logout/login.
 
 Installing java8 means you have AGREED to the license at
   https://www.oracle.com/technetwork/java/javase/terms/license/index.html
+```
+
+#### Vim
+Vim should auto install `Vim-Plug`   
+To install vim plugins with `Vim-Plug`
+```
+vim -c PlugInstall -c qa
 ```

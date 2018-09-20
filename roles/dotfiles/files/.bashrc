@@ -1,4 +1,14 @@
-# export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+#### Environment Variables ####
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:~/.local/bin"
+# Go 
+export GOPATH=~/go
+# Path
+export PATH=${PATH}:${GOPATH}/bin
+export PATH=~/Library/Python/3.6/bin:$PATH
+# Java
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+# Terminal
+export EDITOR="/usr/local/bin/vim"
 
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
@@ -122,10 +132,6 @@ if ! shopt -oq posix; then
 fi
 
 . /usr/share/autojump/autojump.sh
-
-
-# export VISUAL=vim
-export EDITOR="/usr/local/bin/vim"
 
 #### Aliases ####
   # System
