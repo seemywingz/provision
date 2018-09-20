@@ -1,3 +1,4 @@
+```bash
 initailSetupScript=~/redt-inital-setup.sh
 cat > ${initailSetupScript} <<'EOF'
 #!/bin/bash
