@@ -41,6 +41,7 @@ cask_apps:
   - zeplin
 
 # Run the Setup
+The setup script will install [Homebrew](https://brew.sh/) and [Ansible](https://www.ansible.com/overview/how-ansible-works)  
   `./scripts/setup.sh`
 
 #### Limit Which Tasks to Run  ["cli","apps","dotfiles"]
