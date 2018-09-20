@@ -1,7 +1,8 @@
+```bash
 #!/bin/bash
 
 repoDir="~/git"
-retLocalSetupRepo="git@github.com:WeConnect/redt-local-setup.git"
+redtLocalSetupRepo="git@github.com:WeConnect/redt-local-setup.git"
 
 ansibleOptions=""
 while getopts 't:e:' flag; do
@@ -49,10 +50,11 @@ fi
 mkdir -p ${repoDir}
 cd ${repoDir}
 brew install git
-git clone ${retLocalSetupRepo}
+git clone ${redtLocalSetupRepo}
 cd redt-local-setup
 
 ansiblePlaybook="playbooks/provision.yml"
 echo "Running Setup: ansible-playbook ${ansibleOptions} ${ansiblePlaybook}"
 ansible-playbook ${ansibleOptions} ${ansiblePlaybook} 
 exitOnError $? "Running Ansible Playbook"
+```
