@@ -6,9 +6,8 @@ Provision Local Mac OsX for RedTech Kotlin Development
       * Github account, with WeConnect access, as a member of the redtech team.  
       * Artifactory account  
 
-  * Use This Script to Get Things Started:
+  * Just Copy and Run the [Initial Setup Script](https://github.com/WeConnect/redt-local-setup/blob/master/scripts/initial-setup.sh) in Your Terminal 
       * In RedTech we perfer the dir ~/git for Git repository clones. This is where you will do your work  
-      * Just Copy and Run the [Initial Setup Script](https://github.com/WeConnect/redt-local-setup/blob/master/scripts/initial-setup.sh) in Your Terminal  
   * [Optional] Update the Desired Tools and Apps  
     *  playbooks/group_vars/all.yml 
     *  Current List Contains:  
