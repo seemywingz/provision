@@ -1,6 +1,6 @@
 Provision Local Mac OsX for RedTech Kotlin Development
 =====================================
-###### !! Make sure to watch the teminal durring install, your user password is required !! 
+###### !! Make sure to watch the teminal during installation, your user password is required !! 
 # Prerequisites  
   * Get the following accounts set up:  
       * Github account, with WeConnect access, as a member of the redtech team.  
@@ -63,7 +63,7 @@ Then Ansible will take care of the rest!
   
 
 # Caveats
-#### !! Make sure to watch the teminal durring install, your user password is required !! 
+#### !! Make sure to watch the teminal during installation, your user password is required !! 
 
 #### ZSH
 To change your shell to ZSH
