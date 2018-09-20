@@ -169,7 +169,6 @@ alias k="kubectl"
 alias kpods="kubectl get pods"
 
 #### WeWork ####
-# alias aws="aws --profile default"
 alias get-wek8s-credentials='f(){ cmd="docker run -it --rm -v ~/.aws:/package/.aws quay.io/wework/onelogin-aws-saml:master sh -c \"python /package/samlapi.py "$@"\""; bash -c "${cmd}" unset -f f; }; f'
 alias get-aws-credentials='f(){ cmd="docker run -it --rm -v ~/.aws:/package/.aws onelogin-aws-saml sh -c \"python /package/samlapi.py "$@"\""; bash -c "${cmd}" unset -f f; }; f'
 alias get-redt-aws-token="get-aws-credentials --env prod --account 758374777033 --role AWS-Developer --region us-east-1 --profile redt"
