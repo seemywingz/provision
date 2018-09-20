@@ -49,7 +49,7 @@ cask_apps:
 ### To Exclude Tasks ["cli","apps","dotfiles"]
   `./scripts/setup.sh -e "dotfiles"`
 
-## Caveatas
+## Caveats
 ```shell_session
 brew cask info java8
 java8: 1.8.0_181-b13,96a7b8442fe848ef90c96a2fad6ed6d1
