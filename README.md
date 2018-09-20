@@ -11,7 +11,7 @@ Provision Local Mac OsX for RedTech Kotlin Development
       * Copy and Run the [Initial Setup Script](https://github.com/WeConnect/redt-local-setup/blob/master/scripts/initial-setup.sh) in Your Terminal  
   * [Optional] Update the Desired Tools and Apps  
     *  playbooks/group_vars/all.yml 
-    *  Current List:  
+    *  Current List Contains:  
 
  cli_tools:
   - autojump
