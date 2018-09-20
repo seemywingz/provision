@@ -19,6 +19,7 @@ Provision Local Mac OsX
   - jq
   - neovim
   - nmap
+  - mysql
   - shellcheck
   - tree
   - watch
