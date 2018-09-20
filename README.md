@@ -46,13 +46,13 @@ The setup script will install both [Homebrew](https://brew.sh/) and [Ansible](ht
 Then Ansible will take care of the rest!
 
 #### Default Setup
-  `./setup.sh`
+  `./scripts/setup.sh`
 
 #### Limit Which Tasks to Run  ["cli","apps","dotfiles"]
-  `./setup.sh -t "cli,apps"`
+  `./scripts/setup.sh -t "cli,apps"`
 
 #### To Exclude Tasks ["cli","apps","dotfiles"]
-  `./setup.sh -e "dotfiles"`
+  `./scripts/setup.sh -e "dotfiles"`
   
 
 # Caveats
