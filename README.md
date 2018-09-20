@@ -98,3 +98,12 @@ To install vim plugins with `Vim-Plug`
 ```
 vim -c PlugInstall -c qa
 ```
+
+#### AWS CLI
+Before you can run the alias `get-redt-aws-token`  
+Docker must be running `CMD+Space` to open Spotlight search `docker`  
+Then build the onelogin SAML image
+```bash
+cd ~/git/redt-onelogin-aws-saml
+docker build . -t onelogin-aws-saml
+```
