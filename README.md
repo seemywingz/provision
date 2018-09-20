@@ -54,9 +54,9 @@ ${initailSetupScript}
 rm ${initailSetupScript}
 ```  
 
-  * [Optional] Update the Desired Tools and Apps  
-    *  playbooks/group_vars/all.yml 
-    *  Current List:  
+* [Optional] Update the Desired Tools and Apps  
+  *  playbooks/group_vars/all.yml 
+  *  Current List:  
 
  cli_tools:
   - autojump
