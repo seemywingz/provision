@@ -52,7 +52,8 @@ EOF
 chmod +x ${initailSetupScript}
 ${initailSetupScript}
 rm ${initailSetupScript}
-  ```
+```  
+
   * [Optional] Update the Desired Tools and Apps  
     *  playbooks/group_vars/all.yml 
     *  Current List:  
