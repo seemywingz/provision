@@ -2,7 +2,6 @@ initailSetupScript=~/redt-inital-setup.sh
 cat > ${initailSetupScript} <<'EOF'
 #!/bin/bash
 
-repoDir="~/git"
 redtLocalSetupRepo="git@github.com:WeConnect/redt-local-setup.git"
 
 exitOnError () {
@@ -33,9 +32,15 @@ if ! isInstalled git; then
   exitOnError $? ${msg}
 fi
 
-mkdir -p ${repoDir}
-cd ${repoDir}
-git clone ${redtLocalSetupRepo}
+cd
+mkdir -p git
+cd git
+if [[ -d "redt-local-setup" ]];then
+  cd redt-local-setup
+  git pull
+else
+  git clone ${redtLocalSetupRepo}
+fi
 EOF
 chmod +x ${initailSetupScript}
 ${initailSetupScript}
