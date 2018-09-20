@@ -13,6 +13,7 @@ dotfiles:
 
 cli_tools:
   - autojump
+  - awscli
   - ctags
   - coreutils
   - curl 

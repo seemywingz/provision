@@ -1,22 +1,9 @@
+initailSetupScript=~/redt-inital-setup.sh
+cat > ${initailSetupScript} <<'EOF'
 #!/bin/bash
 
 repoDir="~/git"
 redtLocalSetupRepo="git@github.com:WeConnect/redt-local-setup.git"
-
-ansibleOptions=""
-while getopts 't:e:' flag; do
-  case "${flag}" in
-    t) 
-      ansibleOptions="${ansibleOptions} --tags ${OPTARG}"
-      ;;
-    e) 
-      ansibleOptions="${ansibleOptions} --skip-tags ${OPTARG}"
-      ;;
-    *) 
-      error "Unexpected option ${flag}" 
-      ;;
-  esac
-done	
 
 exitOnError () {
   exitCode=$1
@@ -39,20 +26,17 @@ if ! isInstalled brew; then
   brew prune
 fi
 
-if ! isInstalled ansible; then
-  msg="Installing Ansible"
+if ! isInstalled git; then
+  msg="Installing Git"
   echo ${msg}
-  brew install ansible
+  brew install git
   exitOnError $? ${msg}
 fi
 
 mkdir -p ${repoDir}
 cd ${repoDir}
-brew install git
 git clone ${redtLocalSetupRepo}
-cd redt-local-setup
-
-ansiblePlaybook="playbooks/provision.yml"
-echo "Running Setup: ansible-playbook ${ansibleOptions} ${ansiblePlaybook}"
-ansible-playbook ${ansibleOptions} ${ansiblePlaybook} 
-exitOnError $? "Running Ansible Playbook"
+EOF
+chmod +x ${initailSetupScript}
+${initailSetupScript}
+rm ${initailSetupScript}
