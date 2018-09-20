@@ -6,7 +6,8 @@ Provision Local Mac OsX for RedTech Kotlin Development
       * Github account, with WeConnect access, as a member of the redtech team.  
       * Artifactory account  
 
-  * Just Copy and Run the [Initial Setup Script](https://github.com/WeConnect/redt-local-setup/blob/master/scripts/initial-setup.sh) in Your Terminal 
+  * Copy and Run the [Initial Setup Script](https://github.com/WeConnect/redt-local-setup/blob/master/scripts/initial-setup.sh) in Your Terminal 
+      * This script will install [Homebrew](https://brew.sh/) and [Git](https://git-scm.com/)
       * In RedTech we perfer the dir ~/git for Git repository clones. This is where you will do your work  
   * [Optional] Update the Desired Tools and Apps  
     *  playbooks/group_vars/all.yml 
@@ -48,7 +49,7 @@ cask_apps:
   - zeplin
 
 # Run the Full Setup
-The setup script will install both [Homebrew](https://brew.sh/) and [Ansible](https://www.ansible.com/overview/how-ansible-works)  
+The setup script will install [Ansible](https://www.ansible.com/overview/how-ansible-works)  
 Then Ansible will take care of the rest!
 
 #### Default Setup
