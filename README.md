@@ -68,9 +68,9 @@ If you chose not to use the provided dotfiles, make sure to set the proper `JAVA
 ```
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 ```
-Java8 Brew Caveats
+Java8 Brew Caveats 
+###### As of September 20, 2018 latest Java8 version is: 1.8.0_181
 ```shell_session
-brew cask info java8
 java8: 1.8.0_181-b13,96a7b8442fe848ef90c96a2fad6ed6d1
 https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 /usr/local/Caskroom/java8/1.8.0_181-b13,96a7b8442fe848ef90c96a2fad6ed6d1 (243MB)
