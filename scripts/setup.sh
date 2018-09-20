@@ -1,5 +1,6 @@
 #!/bin/bash
-
+rootDir="$(cd "$(dirname "$0")" && pwd)"
+cd ${rootDir}/..
 ansibleOptions=""
 while getopts 't:e:' flag; do
   case "${flag}" in
@@ -47,3 +48,4 @@ ansiblePlaybook="playbooks/provision.yml"
 echo "Running Setup: ansible-playbook ${ansibleOptions} ${ansiblePlaybook}"
 ansible-playbook ${ansibleOptions} ${ansiblePlaybook} 
 exitOnError $? "Running Ansible Playbook"
+cd -
