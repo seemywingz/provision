@@ -3,8 +3,8 @@
 repos:
   local_dir: ~/git
   sources:
-    - { src: 'github.com:WeConnect/redt-docker-infra.git', dest: 'redt-docker-infra'}
-    - { src: 'github.com:WeConnect/redt-onelogin-aws-saml', dest: 'redt-onelogin-aws-saml'}
+    - { src: 'git@github.com:WeConnect/redt-docker-infra.git', dest: 'redt-docker-infra'}
+    - { src: 'git@github.com:WeConnect/redt-onelogin-aws-saml', dest: 'redt-onelogin-aws-saml'}
 
 dotfiles:
   sources:
