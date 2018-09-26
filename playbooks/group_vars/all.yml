@@ -46,7 +46,9 @@ cask_apps:
   - spotify
   - tunnelblick
   - visual-studio-code-insiders
-  - zeplin
+  # - zeplin
+  # - charles
+  # - insomnia
   # - firefox
   # - google-chrome
   # - viscosity
