@@ -3,8 +3,9 @@ Provision Local Mac OsX for RedTech Kotlin Development
 ###### !! Make sure to watch the teminal during installation, your user password is required !! 
 # Prerequisites  
   * Get the following accounts set up:  
-      * Github account, with WeConnect access, as a member of the redtech team.  
-      * Artifactory account  
+      * Github account, with WeConnect Access, as a member of the redtech team.  
+        * Ensure to [Enable GitHub SSH SSO](https://connect.we.co/display/FL/How+to+Setup+GitHub+SSH+Key+and+SSO)
+      * RedTech Artifactory Account Access  
 
   * Copy and Run the [Initial Setup Script](https://github.com/WeConnect/redt-local-setup/blob/master/scripts/initial-setup.sh) in Your Terminal 
       * This script will install [Homebrew](https://brew.sh/) and [Git](https://git-scm.com/), then clone this repo
