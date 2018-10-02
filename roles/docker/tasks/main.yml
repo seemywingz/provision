@@ -1,0 +1,21 @@
+
+# - name: Docker Login to Artifactory
+#   docker_login:
+#     registry: "{{ docker.login.registry }}"
+
+- name: Install Docker Python Module
+  # become: true
+  pip:
+    name: "{{ item.name }}"
+    # version: "{{ item.version }}"
+    state: present
+  with_items:
+  - { name: docker }
+
+- name: Build Docker Images
+  docker_image:
+    path: "~/git/{{ item.src }}"
+    name: "{{ item.img }}"
+  with_items:
+    - "{{ docker.images }}"
+    

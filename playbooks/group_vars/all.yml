@@ -6,6 +6,12 @@ repos:
     - { src: 'git@github.com:WeConnect/redt-docker-infra.git', dest: 'redt-docker-infra'}
     - { src: 'git@github.com:WeConnect/redt-onelogin-aws-saml', dest: 'redt-onelogin-aws-saml'}
 
+docker:
+  login:
+    registry: https://fieldlens-docker-dev-local.jfrog.io
+  images:
+    - { src: 'redt-onelogin-aws-saml', img: 'onelogin-aws-saml'}
+
 dotfiles:
   sources:
     - { src: '.zshrc', dest: '.zshrc'}
