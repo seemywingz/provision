@@ -63,7 +63,7 @@ Then Ansible will take care of the rest!
   `~/git/redt-local-setup/scripts/setup.sh -e "dotfiles"`
   
 
-# Caveats
+# Caveats / Additional Steps
 #### !! Make sure to watch the teminal during installation, your user password is required !! 
 
 #### ZSH
@@ -105,6 +105,8 @@ Before you can run the alias `get-redt-aws-token`
 Docker must be running `CMD+Space` to open Spotlight then search `docker`  
 Then build the onelogin SAML image
 ```bash
+rm -fr ~/.aws/credentials |:
+aws configure set aws_access_key_id "" && aws configure set aws_secret_access_key ""
 cd ~/git/redt-onelogin-aws-saml
 docker build . -t onelogin-aws-saml
 ```
