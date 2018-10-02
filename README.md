@@ -50,6 +50,8 @@ cask_apps:
   - zeplin
 
 # Run the Full Setup
+#### !! Make sure to watch the teminal during installation, your user password is required !! 
+
 The setup script will install [Ansible](https://www.ansible.com/overview/how-ansible-works)  
 Then Ansible will take care of the rest!
 
