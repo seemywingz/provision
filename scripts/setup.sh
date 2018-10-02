@@ -45,7 +45,7 @@ if ! isInstalled ansible; then
 fi
 
 ansiblePlaybook="playbooks/provision.yml"
-echo "Running Setup: ansible-playbook ${ansibleOptions} --ask-sudo-pass ${ansiblePlaybook} "
+echo "Running Setup: ansible-playbook ${ansibleOptions} ${ansiblePlaybook} "
 ansible-playbook ${ansibleOptions} ${ansiblePlaybook} 
 exitOnError $? "Running Ansible Playbook"
 cd -
