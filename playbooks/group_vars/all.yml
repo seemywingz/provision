@@ -9,6 +9,7 @@ repos:
 dotfiles:
   sources:
     - { src: '.zshrc', dest: '.zshrc'}
+    - { src: '.bashrc', dest: '.bashrc'}
     - { src: '.vimrc', dest: '.vimrc'}
     - { src: 'ssh.config', dest: '.ssh/config'}
 
