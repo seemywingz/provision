@@ -1,5 +1,5 @@
 
-- name: Install Caskroom
+- name: Install Brew Caskroom and Versions
   command: "{{ item }}"
   with_items:
     - brew install caskroom/cask/brew-cask
