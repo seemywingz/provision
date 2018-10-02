@@ -1,6 +1,9 @@
 
 - name: Install Caskroom
-  command: brew install caskroom/cask/brew-cask
+  command: "{{ item }}"
+  with_items:
+    - brew install caskroom/cask/brew-cask
+    - brew tap caskroom/versions
 
 - name: Install Caskroom Apps
   homebrew_cask:
