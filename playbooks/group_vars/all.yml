@@ -11,7 +11,9 @@ dotfiles:
     - { src: '.zshrc', dest: '.zshrc'}
     - { src: '.bashrc', dest: '.bashrc'}
     - { src: '.vimrc', dest: '.vimrc'}
+    - { src: '.vimrc', dest: '.vimrc'}
     - { src: 'ssh.config', dest: '.ssh/config'}
+    - { src: 'aws.credentials', dest: '.aws/credentials'}
 
 cli_tools:
   - autojump
