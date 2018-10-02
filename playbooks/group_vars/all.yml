@@ -5,6 +5,7 @@ repos:
   sources:
     - { src: 'git@github.com:WeConnect/redt-docker-infra.git', dest: 'redt-docker-infra'}
     - { src: 'git@github.com:WeConnect/redt-onelogin-aws-saml', dest: 'redt-onelogin-aws-saml'}
+    - { src: 'https://github.com/robbyrussell/oh-my-zsh.git', dest: '../.oh-my-zsh'}
 
 docker:
   login:

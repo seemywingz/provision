@@ -8,9 +8,3 @@
     force: no
   with_items:
     - "{{ dotfiles.sources }}"
-
-- name: Install Oh My Zsh
-  git:
-    repo: https://github.com/robbyrussell/oh-my-zsh.git
-    dest: ~/.oh-my-zsh
-    update: no
