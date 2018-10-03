@@ -66,7 +66,7 @@ Then Ansible will take care of the rest!
   `~/git/redt-local-setup/scripts/setup.sh -e "dotfiles"`
   
 
-# Caveats / Additional Steps
+# Additional Steps
 #### !! Make sure to watch the teminal during installation, your user password is required !! 
 
 #### ZSH
