@@ -1,8 +1,0 @@
-
-- name: Clone Iterm2 Colors Repo
-  git:
-    repo=https://github.com/mbadolato/iTerm2-Color-Schemes.git
-    dest="{{ repo_path }}/iTerm2-Color-Schemes"
-
-- name: Install Oh My zsh
-  shell: sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"

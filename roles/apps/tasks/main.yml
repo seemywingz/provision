@@ -1,3 +1,4 @@
+# vim:ft=ansible
 
 - name: Install Brew Caskroom and Versions
   command: "{{ item }}"
