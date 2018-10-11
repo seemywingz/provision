@@ -61,6 +61,7 @@ au CursorHold * checktime
 " Install vim-plug:
 " curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 "    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
 " Vim Plug Auto Install:
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -80,6 +81,8 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'airblade/vim-gitgutter'
 Plug 'bling/vim-airline'
 Plug 'flazz/vim-colorschemes'
+Plug 'scrooloose/syntastic'
+Plug 'nathanaelkane/vim-indent-guides'
 
 " Initialize plugin system
 call plug#end()
