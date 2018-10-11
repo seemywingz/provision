@@ -1,4 +1,10 @@
 # vim:ft=ansible
+- name: Create Config Directories
+  file: 
+    path: "{{item}}"
+    state: directory
+  with_items:
+   - "{{ dotfiles.directories }}"
 
 - name: Copy Dotfiles
   copy:

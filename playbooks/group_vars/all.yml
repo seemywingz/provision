@@ -15,6 +15,11 @@ docker:
     - { src: 'redt-onelogin-aws-saml', img: 'onelogin-aws-saml'}
 
 dotfiles:
+  directories:
+    - ~/.aws
+    - ~/.ssh
+    - ~/.gradle
+    - ~/.config/nvim
   sources:
     - { src: '.zshrc', dest: '.zshrc'}
     - { src: '.bashrc', dest: '.bashrc'}
@@ -22,6 +27,7 @@ dotfiles:
     - { src: '.vimrc', dest: '.vimrc'}
     - { src: 'ssh.config', dest: '.ssh/config'}
     - { src: 'aws.credentials', dest: '.aws/credentials'}
+    - { src: 'init.vim', dest: '.config/nvim/init.vim'}
     - { src: 'gradle.properties', dest: '.gradle/gradle.properties'}
 
 cli_tools:

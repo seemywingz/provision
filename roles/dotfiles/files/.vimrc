@@ -31,8 +31,10 @@ set encoding=utf-8
 set fileencoding=utf-8
 
 " Enable Mouse Support with SGR (xterm 1006 mouse support for more lines)
-set mouse+=a
-set ttymouse=xterm2
+if !has('nvim')
+  set mouse+=a
+  set ttymouse=xterm2
+endif
 
 " VIM-Markdown Configuration
 let g:vim_markdown_folding_disabled=1
