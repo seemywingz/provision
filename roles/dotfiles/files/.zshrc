@@ -106,6 +106,7 @@ fi
 #### Aliases ####
   # System
 alias ..="cd .."
+alias vim="nvim"
 alias ls="ls -G"
 alias cls="clear"
 alias la="ls -lha"
