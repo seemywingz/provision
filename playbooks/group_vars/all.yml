@@ -45,6 +45,7 @@ ubuntu:
       - code-insiders
       - gparted
       - snap
+      - steam
     gpg:
       - "https://packages.microsoft.com/keys/microsoft.asc"
     ppa:
@@ -64,6 +65,7 @@ mac:
     - sequel-pro
     - slack
     - spotify
+    - steam
     - tunnelblick
     - visual-studio-code-insiders
     # - zeplin
