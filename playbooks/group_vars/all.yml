@@ -26,7 +26,6 @@ cli_tools:
   - curl 
   - fswatch
   - git
-  - git-town
   - go
   - htop
   - jq
