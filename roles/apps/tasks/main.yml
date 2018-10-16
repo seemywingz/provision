@@ -42,5 +42,12 @@
     state: present
     update_cache: "yes"
   with_items:
-    - "{{ ubuntu.apps }}"
+    - "{{ ubuntu.apt.apps }}"
+  when: ansible_distribution == "Ubuntu"
+
+- name: Install Applications via snap
+  become: true
+  command: snap install "{{ item }}"
+  with_items:
+    - "{{ ubuntu.snap.apps }}"
   when: ansible_distribution == "Ubuntu"
