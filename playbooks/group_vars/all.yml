@@ -38,18 +38,17 @@ cli_tools:
   - zsh
 
 ubuntu:
+  apps:
+    - spotify
+    - software-properties-common 
+    - apt-transport-https
+    - code-insiders
+    - gparted
   apt:
     gpg:
       - "https://packages.microsoft.com/keys/microsoft.asc"
     ppa:
       - "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
-    scripts:
-      - apt_vs-code.sh
-    apps:
-      - spotify
-      - software-properties-common 
-      - apt-transport-https
-      - code-insiders
 
 mac:
   apps:

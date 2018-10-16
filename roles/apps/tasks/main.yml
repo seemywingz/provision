@@ -16,12 +16,6 @@
   ignore_errors: yes
   when: ansible_distribution == "MacOSX"
 
-# - name: Run Ubuntu Install Apt Scripts
-#   script: "{{ item }}"
-#   with_items:
-#     - "{{ ubuntu.apt.scripts }}"
-#   when: ansible_distribution == "Ubuntu"
-
 - name: Accept Apt GPG Keys
   become: true
   apt_key:
@@ -38,4 +32,15 @@
     state: present
   with_items:
     - "{{ ubuntu.apt.ppa }}"
+  when: ansible_distribution == "Ubuntu"
+
+
+- name: Install Applications via Apt
+  become: true
+  apt:
+    pkg: "{{ item }}"
+    state: present
+    update_cache: "yes"
+  with_items:
+    - "{{ ubuntu.apps }}"
   when: ansible_distribution == "Ubuntu"
