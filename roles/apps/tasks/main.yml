@@ -27,4 +27,4 @@
     url: "{{ item }}"
     state: present
   with_items:
-    - "{{ ubuntu.apt.keys }}"
+    - "{{ ubuntu.apt.gpg_urls }}"

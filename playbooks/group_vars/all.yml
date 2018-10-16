@@ -39,7 +39,7 @@ cli_tools:
 
 ubuntu:
   apt:
-    keys:
+    gpg_urls:
       - "https://packages.microsoft.com/keys/microsoft.asc"
       - "https://packages.microsoft.com/keys/microsoft.asc"
     scripts:
