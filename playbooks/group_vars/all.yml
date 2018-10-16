@@ -18,7 +18,7 @@ dotfiles:
     - { src: 'ssh.config', dest: '.ssh/config'}
     - { src: 'init.vim', dest: '.config/nvim/init.vim'}
 
-mac_cli_tools:
+cli_tools:
   - autojump
   - awscli
   - ctags
