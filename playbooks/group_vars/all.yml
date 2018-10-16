@@ -1,36 +1,24 @@
 # Maintainer: Kevin Jayne
 
 repos:
-  local_dir: ~/git
+  local_dir: ~/repos
   sources:
-    - { src: 'git@github.com:WeConnect/redt-docker-infra.git', dest: 'redt-docker-infra'}
-    - { src: 'git@github.com:WeConnect/redt-onelogin-aws-saml', dest: 'redt-onelogin-aws-saml'}
+    - { src: 'git@bitbucket.org:seemywingz/dotfiles.git', dest: 'dotfiles'}
     - { src: 'https://github.com/robbyrussell/oh-my-zsh.git', dest: '../.oh-my-zsh'}
     - { src: 'https://github.com/mbadolato/iTerm2-Color-Schemes.git', dest: '../.iTerm2-Color-Schemes'}
 
-docker:
-  login:
-    registry: https://fieldlens-docker-dev-local.jfrog.io
-  images:
-    - { src: 'redt-onelogin-aws-saml', img: 'onelogin-aws-saml'}
-
 dotfiles:
   directories:
-    - ~/.aws
     - ~/.ssh
-    - ~/.gradle
     - ~/.config/nvim
   sources:
     - { src: '.zshrc', dest: '.zshrc'}
     - { src: '.bashrc', dest: '.bashrc'}
     - { src: '.vimrc', dest: '.vimrc'}
-    - { src: '.vimrc', dest: '.vimrc'}
     - { src: 'ssh.config', dest: '.ssh/config'}
-    - { src: 'aws.credentials', dest: '.aws/credentials'}
     - { src: 'init.vim', dest: '.config/nvim/init.vim'}
-    - { src: 'gradle.properties', dest: '.gradle/gradle.properties'}
 
-cli_tools:
+mac_cli_tools:
   - autojump
   - awscli
   - ctags
@@ -52,7 +40,7 @@ cli_tools:
   - yarn
   - zsh
 
-cask_apps:
+mac_cask_apps:
   - 1password
   - docker
   - intellij-idea

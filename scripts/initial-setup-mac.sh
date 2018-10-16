@@ -2,7 +2,7 @@ initailSetupScript=~/redt-inital-setup.sh
 cat > ${initailSetupScript} <<'EOF'
 #!/bin/bash
 
-redtLocalSetupRepo="git@github.com:WeConnect/redt-local-setup.git"
+localSetupRepo="git@github.com:WeConnect/redt-local-setup.git"
 
 exitOnError () {
   exitCode=$1
@@ -39,7 +39,7 @@ if [[ -d "redt-local-setup" ]];then
   cd redt-local-setup
   git pull
 else
-  git clone ${redtLocalSetupRepo}
+  git clone ${localSetupRepo}
 fi
 EOF
 chmod +x ${initailSetupScript}

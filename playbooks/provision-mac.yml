@@ -1,6 +1,6 @@
 # EMN DevOps initializer
 
-- name: Provision Unix for Local Development
+- name: Provision Mac for Local Development
   hosts: localhost
   connection: local
   gather_facts: no
