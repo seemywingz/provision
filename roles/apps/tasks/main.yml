@@ -30,6 +30,7 @@
   apt_repository:
     repo: "{{ item }}"
     state: present
+    update_cache: yes
   with_items:
     - "{{ ubuntu.apt.ppa }}"
   when: ansible_distribution == "Ubuntu"
