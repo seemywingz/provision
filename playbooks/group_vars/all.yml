@@ -39,7 +39,7 @@ cli_tools:
 
 ubuntu:
   apps:
-    - spotify
+    # - spotify
     - software-properties-common 
     - apt-transport-https
     - code-insiders
