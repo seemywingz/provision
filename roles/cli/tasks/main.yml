@@ -7,3 +7,13 @@
     update_homebrew: "yes"
   with_items:
     - "{{ cli_tools }}"
+  when: ansible_os_family == "Darwin"
+
+- name: Install CLI Tools via Apt
+  apt:
+    pkg: "{{ item }}"
+    state: present
+    update_cache: "yes"
+  with_items:
+    - "{{ cli_tools }}"
+  when: ansible_os_family == "Debian"
