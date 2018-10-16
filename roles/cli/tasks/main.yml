@@ -7,7 +7,7 @@
     update_homebrew: "yes"
   with_items:
     - "{{ cli_tools }}"
-  when: ansible_distribution == "Darwin"
+  when: ansible_distribution == "MacOSX"
 
 - name: Install CLI Tools via Apt
   become: true
@@ -17,4 +17,5 @@
     update_cache: "yes"
   with_items:
     - "{{ cli_tools }}"
+    - "{{ apt_apps }}"
   when: ansible_distribution == "Ubuntu"

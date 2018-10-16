@@ -37,23 +37,36 @@ cli_tools:
   - yarn
   - zsh
 
-mac_cask_apps:
-  - 1password
-  - docker
-  - intellij-idea
-  - iterm2
-  - java8
-  - postman
-  - sequel-pro
-  - slack
-  - spotify
-  - tunnelblick
-  - visual-studio-code-insiders
-  # - zeplin
-  # - charles
-  # - insomnia
-  # - firefox
-  # - google-chrome
-  # - viscosity
-  # - virtualbox
-  # - vagrant
+ubuntu:
+  apt:
+    keys:
+      - "https://packages.microsoft.com/keys/microsoft.asc"
+    scripts:
+      - apt_vs-code.sh
+    apps:
+      - spotify
+      - software-properties-common 
+      - apt-transport-https
+      - code-insiders
+
+mac:
+  apps:
+    - 1password
+    - docker
+    - intellij-idea
+    - iterm2
+    - java8
+    - postman
+    - sequel-pro
+    - slack
+    - spotify
+    - tunnelblick
+    - visual-studio-code-insiders
+    # - zeplin
+    # - charles
+    # - insomnia
+    # - firefox
+    # - google-chrome
+    # - viscosity
+    # - virtualbox
+    # - vagrant

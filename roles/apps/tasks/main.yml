@@ -5,11 +5,26 @@
   with_items:
     - brew install caskroom/cask/brew-cask
     - brew tap caskroom/versions
+  when: ansible_distribution == "MacOSX"
 
 - name: Install Caskroom Apps
   homebrew_cask:
     name: "{{item}}"
     state: "present"
   with_items:
-    - "{{ cask_apps }}"
+    - "{{ mac.apps }}"
   ignore_errors: yes
+  when: ansible_distribution == "MacOSX"
+
+# - name: Run Ubuntu Install Apt Scripts
+#   script: "{{ item }}"
+#   with_items:
+#     - "{{ ubuntu.apt.scripts }}"
+#   when: ansible_distribution == "Ubuntu"
+
+- name: Accept Apt GPG Keys
+  apt_key:
+    url:
+    state: present
+  with_items:
+    - "{{ ubuntu.apt.keys }}"
