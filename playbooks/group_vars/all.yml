@@ -39,8 +39,10 @@ cli_tools:
 
 ubuntu:
   apt:
-    gpg_urls:
+    gpg:
       - "https://packages.microsoft.com/keys/microsoft.asc"
+    ppa:
+      - "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
     scripts:
       - apt_vs-code.sh
     apps:

@@ -28,4 +28,13 @@
     url: "{{ item }}"
     state: present
   with_items:
-    - "{{ ubuntu.apt.gpg_urls }}"
+    - "{{ ubuntu.apt.gpg }}"
+  when: ansible_distribution == "Ubuntu"
+
+- name: Add Apt PPAs
+  apt_repository:
+    repo: "{{ item }}"
+    state: present
+  with_items:
+    - "{{ ubuntu.apt.ppa }}"
+  when: ansible_distribution == "Ubuntu"
