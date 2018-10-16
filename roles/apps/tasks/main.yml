@@ -32,6 +32,7 @@
   when: ansible_distribution == "Ubuntu"
 
 - name: Add Apt PPAs
+  become: true
   apt_repository:
     repo: "{{ item }}"
     state: present
