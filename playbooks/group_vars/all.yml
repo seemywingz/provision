@@ -30,7 +30,6 @@ cli_tools:
   - jq
   - neovim
   - nmap
-  - mysql
   - shellcheck
   - tree
   - watch
