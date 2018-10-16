@@ -1,8 +1,27 @@
 
-- name: Clone RedTech Repositories
+- name: Clone Shared Repositories
   git:
     repo: "{{ item.src }}"
     dest: "{{ repos.local_dir }}/{{ item.dest }}"
     accept_hostkey: yes
   with_items:
     - "{{ repos.sources }}"
+
+- name: Clone Mac Repositories
+  git:
+    repo: "{{ item.src }}"
+    dest: "{{ repos.local_dir }}/{{ item.dest }}"
+    accept_hostkey: yes
+  with_items:
+    - "{{ repos.mac.sources }}"
+  when: ansible_distribution == "MacOSX"
+
+
+- name: Clone Ubuntu Repositories
+  git:
+    repo: "{{ item.src }}"
+    dest: "{{ repos.local_dir }}/{{ item.dest }}"
+    accept_hostkey: yes
+  with_items:
+    - "{{ repos.ubuntu.sources }}"
+  when: ansible_distribution == "Ubuntu"
