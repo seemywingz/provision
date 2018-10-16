@@ -39,7 +39,7 @@ cli_tools:
 
 ubuntu:
   apps:
-    # - spotify
+    - spotify-client
     - software-properties-common 
     - apt-transport-https
     - code-insiders
@@ -49,6 +49,7 @@ ubuntu:
       - "https://packages.microsoft.com/keys/microsoft.asc"
     ppa:
       - "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+      - "deb http://repository.spotify.com stable non-free"
 
 mac:
   apps:
