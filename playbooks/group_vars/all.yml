@@ -41,7 +41,6 @@ ubuntu:
   apt:
     gpg_urls:
       - "https://packages.microsoft.com/keys/microsoft.asc"
-      - "https://packages.microsoft.com/keys/microsoft.asc"
     scripts:
       - apt_vs-code.sh
     apps:

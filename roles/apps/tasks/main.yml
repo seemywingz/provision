@@ -23,6 +23,7 @@
 #   when: ansible_distribution == "Ubuntu"
 
 - name: Accept Apt GPG Keys
+  become: true
   apt_key:
     url: "{{ item }}"
     state: present
