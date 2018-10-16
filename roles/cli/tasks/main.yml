@@ -10,6 +10,7 @@
   when: ansible_distribution == "Darwin"
 
 - name: Install CLI Tools via Apt
+  become: true
   apt:
     pkg: "{{ item }}"
     state: present
