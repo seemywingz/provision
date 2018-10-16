@@ -37,6 +37,6 @@ fi
 
 ansiblePlaybook="playbooks/provision.yml"
 echo "Running Setup: ansible-playbook ${ansibleOptions} ${ansiblePlaybook} "
-ansible-playbook ${ansibleOptions} ${ansiblePlaybook} --ask-sudo-pass
+ansible-playbook ${ansibleOptions} ${ansiblePlaybook} --ask-become-pass
 exitOnError $? "Running Ansible Playbook"
 cd -
