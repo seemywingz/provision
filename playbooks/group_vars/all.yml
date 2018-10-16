@@ -40,12 +40,13 @@ cli_tools:
 ubuntu:
   apt:
     apps:
-      - software-properties-common 
       - apt-transport-https
       - code-insiders
       - gparted
       - snap
+      - software-properties-common 
       - steam
+      - terminator
     gpg:
       - "https://packages.microsoft.com/keys/microsoft.asc"
     ppa:
