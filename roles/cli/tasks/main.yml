@@ -17,5 +17,4 @@
     update_cache: "yes"
   with_items:
     - "{{ cli_tools }}"
-    - "{{ apt_apps }}"
   when: ansible_distribution == "Ubuntu"
