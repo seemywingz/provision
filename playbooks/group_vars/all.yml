@@ -4,14 +4,15 @@ dotfiles:
   config:
     directories:
       - ~/.config/nvim
-    files:
-      - { src: 'init.vim', dest: '.config/nvim/init.vim'}
+      - ~/.config/terminator
   sources:
     - { src: '.zshrc', dest: '.zshrc'}
     - { src: '.bashrc', dest: '.bashrc'}
     - { src: '.vimrc', dest: '.vimrc'}
     - { src: '.Xmodmap', dest: '.Xmodmap'}
     - { src: 'ssh.config', dest: '.ssh/config'}
+    - { src: 'init.vim', dest: '.config/nvim/init.vim'}
+    - { src: 'terminals/terminator.config', dest: '.config/terminator/config'}
 
 repos:
   local_dir: ~/repos
