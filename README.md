@@ -1,4 +1,4 @@
-Provision Local Mac OsX for RedTech Kotlin Development
+Provision Local Mac OsX or Ubuntu
 =====================================
 ###### !! Make sure to watch the teminal during installation, your user password is required !! 
 # Prerequisites  
