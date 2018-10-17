@@ -2,8 +2,9 @@ Provision Local Mac OsX for RedTech Kotlin Development
 =====================================
 ###### !! Make sure to watch the teminal during installation, your user password is required !! 
 # Prerequisites  
-  * Copy and Run the [Initial Setup Script](https://github.com/WeConnect/redt-local-setup/blob/master/scripts/initial-setup.sh) in Your Terminal 
-      * This script will install [Homebrew](https://brew.sh/) (on mac) and [Git](https://git-scm.com/), then clone this repo
+  * Copy and Run the appropriate initial-setup script in Your Terminal 
+      * The [Mac Script](https://github.com/WeConnect/redt-local-setup/blob/master/scripts/initial-setup.sh)  will install [Homebrew](https://brew.sh/) and [Git](https://git-scm.com/), then clone this repo
+      * The [Ubuntu Script](https://github.com/WeConnect/redt-local-setup/blob/master/scripts/initial-setup.sh)  will install [Homebrew](https://brew.sh/) and [Git](https://git-scm.com/), then clone this repo
   * [Optional] Update the Desired Tools and Apps  
     *  playbooks/group_vars/all.yml 
     *  Current List Contains:  
