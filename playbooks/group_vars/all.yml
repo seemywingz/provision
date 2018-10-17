@@ -1,8 +1,11 @@
 # Maintainer: Kevin Jayne
 
 dotfiles:
-  configs:
-    - { src: 'init.vim', dest: '.config/nvim/init.vim'}
+  config:
+    directories:
+      - .config/nvim
+    files:
+      - { src: 'init.vim', dest: '.config/nvim/init.vim'}
   sources:
     - { src: '.zshrc', dest: '.zshrc'}
     - { src: '.bashrc', dest: '.bashrc'}

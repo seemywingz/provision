@@ -4,7 +4,7 @@
     path: "{{item}}"
     state: directory
   with_items:
-   - "{{ dotfiles.directories }}"
+   - "{{ dotfiles.config.directories }}"
 
 - name: Copy Configuration Files
   copy:
@@ -13,7 +13,7 @@
     mode: "0644"
     force: no
   with_items:
-    - "{{ dotfiles.configs }}"
+    - "{{ dotfiles.config.files }}"
 
 - name: Link Dotfiles
   copy:
