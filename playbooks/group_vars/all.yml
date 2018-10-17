@@ -7,8 +7,8 @@ dotfiles:
       - ~/.config/terminator
   sources:
     - { src: '.zshrc', dest: '.zshrc'}
-    - { src: '.bashrc', dest: '.bashrc'}
     - { src: '.vimrc', dest: '.vimrc'}
+    - { src: '.bashrc', dest: '.bashrc'}
     - { src: '.Xmodmap', dest: '.Xmodmap'}
     - { src: 'ssh.config', dest: '.ssh/config'}
     - { src: 'init.vim', dest: '.config/nvim/init.vim'}
