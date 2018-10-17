@@ -3,7 +3,7 @@
 dotfiles:
   config:
     directories:
-      - .config/nvim
+      - ~/.config/nvim
     files:
       - { src: 'init.vim', dest: '.config/nvim/init.vim'}
   sources:
