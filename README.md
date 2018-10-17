@@ -75,7 +75,7 @@ If you chose not to use the provided dotfiles, make sure to set the proper `JAVA
 ```
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 ```
-Java8 Brew Caveats (Mac Only)
+Java8 Brew Caveats
 ###### As of September 20, 2018 latest Java8 version is: 1.8.0_181
 ```term
 ==> Caveats
