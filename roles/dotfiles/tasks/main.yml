@@ -16,7 +16,7 @@
     - "{{ dotfiles.config.files }}"
 
 - name: Link Dotfiles
-  copy:
+  file:
     src: "{{ repos.local_dir }}/dotfiles/{{ item.src }}"
     dest: "~/{{ item.dest }}"
     mode: "0644"
