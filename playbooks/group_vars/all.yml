@@ -10,6 +10,7 @@ dotfiles:
     - { src: '.zshrc', dest: '.zshrc'}
     - { src: '.bashrc', dest: '.bashrc'}
     - { src: '.vimrc', dest: '.vimrc'}
+    - { src: '.Xmodmap', dest: '.Xmodmap'}
     - { src: 'ssh.config', dest: '.ssh/config'}
 
 repos:
