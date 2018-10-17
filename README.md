@@ -3,8 +3,8 @@ Provision Local Mac OsX for RedTech Kotlin Development
 ###### !! Make sure to watch the teminal during installation, your user password is required !! 
 # Prerequisites  
   * Copy and Run the appropriate initial-setup script in Your Terminal 
-      * The [Mac Script](https://github.com/WeConnect/redt-local-setup/blob/master/scripts/initial-setup.sh)  will install [Homebrew](https://brew.sh/) and [Git](https://git-scm.com/), then clone this repo
-      * The [Ubuntu Script](https://github.com/WeConnect/redt-local-setup/blob/master/scripts/initial-setup.sh)  will install [Homebrew](https://brew.sh/) and [Git](https://git-scm.com/), then clone this repo
+      * The [Mac Script](https://bitbucket.org/seemywingz/local-provision/raw/master/scripts/initial-setup-mac.sh)  will install [Homebrew](https://brew.sh/) and [Git](https://git-scm.com/), then clone this repo
+      * The [Ubuntu Script](https://bitbucket.org/seemywingz/local-provision/raw/master/scripts/initial-setup-unix.sh)  will install [Git](https://git-scm.com/), then clone this repo
   * [Optional] Update the Desired Tools and Apps  
     *  playbooks/group_vars/all.yml 
     *  Current List Contains:  
@@ -70,12 +70,12 @@ To change your shell to ZSH
 chsh -s /bin/zsh
 ```  
 
-#### Java8
+#### Java8 (Mac Only)
 If you chose not to use the provided dotfiles, make sure to set the proper `JAVA_HOME` environment variable in your shell's run commands e.g. `~/.bashrc` 
 ```
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 ```
-Java8 Brew Caveats 
+Java8 Brew Caveats (Mac Only)
 ###### As of September 20, 2018 latest Java8 version is: 1.8.0_181
 ```term
 ==> Caveats
@@ -96,13 +96,4 @@ Vim should auto install `Vim-Plug`
 To install vim plugins with `Vim-Plug`
 ```
 vim -c PlugInstall -c qa
-```
-
-#### AWS CLI
-Before you can run the alias `get-redt-aws-token`  
-Docker must be running `CMD+Space` to open Spotlight then search `docker`  
-Then build the onelogin SAML image
-```bash
-cd ~/git/redt-onelogin-aws-saml
-docker build . -t onelogin-aws-saml
 ```
