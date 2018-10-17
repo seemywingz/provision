@@ -1,5 +1,14 @@
 # Maintainer: Kevin Jayne
 
+dotfiles:
+  configs:
+    - { src: 'init.vim', dest: '.config/nvim/init.vim'}
+  sources:
+    - { src: '.zshrc', dest: '.zshrc'}
+    - { src: '.bashrc', dest: '.bashrc'}
+    - { src: '.vimrc', dest: '.vimrc'}
+    - { src: 'ssh.config', dest: '.ssh/config'}
+
 repos:
   local_dir: ~/repos
   sources:
@@ -12,17 +21,6 @@ repos:
   ubuntu:
     sources:
       - { src: 'https://github.com/mbadolato/iTerm2-Color-Schemes.git', dest: '../.iTerm2-Color-Schemes'}
-
-dotfiles:
-  directories:
-    - ~/.ssh
-    - ~/.config/nvim
-  sources:
-    - { src: '.zshrc', dest: '.zshrc'}
-    - { src: '.bashrc', dest: '.bashrc'}
-    - { src: '.vimrc', dest: '.vimrc'}
-    - { src: 'ssh.config', dest: '.ssh/config'}
-    - { src: 'init.vim', dest: '.config/nvim/init.vim'}
 
 cli_tools:
   - autojump

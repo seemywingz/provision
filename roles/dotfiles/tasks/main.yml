@@ -6,9 +6,18 @@
   with_items:
    - "{{ dotfiles.directories }}"
 
-- name: Copy Dotfiles
+- name: Copy Configuration Files
   copy:
     src: "{{ item.src }}"
+    dest: "~/{{ item.dest }}"
+    mode: "0644"
+    force: no
+  with_items:
+    - "{{ dotfiles.configs }}"
+
+- name: Link Dotfiles
+  copy:
+    src: "{{ repos.local_dir }}/dotfiles/{{ item.src }}"
     dest: "~/{{ item.dest }}"
     mode: "0644"
     force: no
