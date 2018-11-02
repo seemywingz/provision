@@ -1,5 +1,5 @@
 initailSetupScript=~/inital-setup.sh
-setupScript=~/repos/local-provision/setup.sh
+setupScript=~/repos/local-provision/scripts/setup.sh
 cat > ${initailSetupScript} <<'EOF'
 #!/bin/bash
 
