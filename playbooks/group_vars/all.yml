@@ -53,6 +53,7 @@ ubuntu:
       - apt-transport-https
       - code-insiders
       - gparted
+      - openssh-server
       - snap
       - software-properties-common 
       - steam
