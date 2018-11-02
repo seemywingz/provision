@@ -1,4 +1,5 @@
 initailSetupScript=~/inital-setup.sh
+setupScript=~/repos/local-provision/setup.sh
 cat > ${initailSetupScript} <<'EOF'
 #!/bin/bash
 
@@ -36,3 +37,4 @@ EOF
 chmod +x ${initailSetupScript}
 ${initailSetupScript}
 rm ${initailSetupScript}
+$setupScript
