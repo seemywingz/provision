@@ -51,14 +51,14 @@ The setup script will install [Ansible](https://www.ansible.com/overview/how-ans
 Then Ansible will take care of the rest!
 
 #### Default Setup
-  `~/git/redt-local-setup/scripts/setup.sh`
+  `~/repos/local-provision/scripts/setup.sh`
 
 #### All Tasks  ["cli","apps","dotfiles"]
 #### Limit Which Tasks to Run 
-  `~/git/redt-local-setup/scripts/setup.sh -t "cli,apps"`
+  `~/repos/local-provision/scripts/setup.sh -t "cli,apps"`
 
 #### To Exclude Tasks
-  `~/git/redt-local-setup/scripts/setup.sh -e "dotfiles"`
+  `~/repos/local-provision/scripts/setup.sh -e "dotfiles"`
   
 
 # Additional Steps

@@ -19,7 +19,7 @@ isInstalled () {
 if ! isInstalled git; then
   msg="Installing Git"
   echo ${msg}
-  sudo apt install git
+  sudo apt install git -y
   exitOnError $? ${msg}
 fi
 
