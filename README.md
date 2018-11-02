@@ -3,8 +3,8 @@ Provision Local Mac OsX or Ubuntu
 ###### !! Make sure to watch the teminal during installation, your user password is required !! 
 # Prerequisites  
   * Copy and Run the appropriate initial-setup script in Your Terminal 
-      * The [Mac Script](https://bitbucket.org/seemywingz/local-provision/raw/master/scripts/initial-setup-mac.sh)  will install [Homebrew](https://brew.sh/) and [Git](https://git-scm.com/), then clone this repo
-      * The [Ubuntu Script](https://bitbucket.org/seemywingz/local-provision/raw/master/scripts/initial-setup-unix.sh)  will install [Git](https://git-scm.com/), then clone this repo
+      * The [Mac Script](https://bitbucket.org/seemywingz/local-provision/raw/master/scripts/mac.sh)  will install [Homebrew](https://brew.sh/) and [Git](https://git-scm.com/), then clone this repo
+      * The [Ubuntu Script](https://bitbucket.org/seemywingz/local-provision/raw/master/scripts/ubuntu.sh)  will install [Git](https://git-scm.com/), then clone this repo
   * [Optional] Update the Desired Tools and Apps  
     *  playbooks/group_vars/all.yml 
     *  Current List Contains:  
