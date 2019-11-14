@@ -35,8 +35,8 @@ fi
 cd
 mkdir -p git
 cd git
-if [[ -d "redt-local-setup" ]];then
-  cd redt-local-setup
+if [[ -d "local-provision" ]];then
+  cd local-provision
   git pull
 else
   git clone ${localSetupRepo}
