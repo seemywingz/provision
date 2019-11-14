@@ -17,8 +17,8 @@ dotfiles:
 repos:
   local_dir: ~/repos
   sources:
-    - { src: 'git@bitbucket.org:seemywingz/str.git', dest: 'str'}
-    - { src: 'git@bitbucket.org:seemywingz/dotfiles.git', dest: 'dotfiles'}
+    - { src: 'git@github.com:seemywingz/str.git', dest: 'str'}
+    - { src: 'git@github.com:seemywingz/dotfiles.git', dest: 'dotfiles'}
     - { src: 'https://github.com/robbyrussell/oh-my-zsh.git', dest: '../.oh-my-zsh'}
     - { src: 'https://github.com/mbadolato/iTerm2-Color-Schemes.git', dest: '../.iTerm2-Color-Schemes'}
   mac:
@@ -80,11 +80,11 @@ mac:
     - steam
     - tunnelblick
     - visual-studio-code-insiders
+    - google-chrome
     # - zeplin
     # - charles
     # - insomnia
     # - firefox
-    # - google-chrome
     # - viscosity
     # - virtualbox
     # - vagrant
