@@ -2,7 +2,7 @@ initailSetupScript=~/redt-inital-setup.sh
 cat > ${initailSetupScript} <<'EOF'
 #!/bin/bash
 
-localSetupRepo="git@bitbucket.org:seemywingz/local-provision.git"
+localSetupRepo="git@github.com:seemywingz/local-provision.git"
 
 exitOnError () {
   exitCode=$1
