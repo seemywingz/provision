@@ -20,7 +20,8 @@ repos:
     - { src: 'git@github.com:seemywingz/str.git', dest: 'str'}
     - { src: 'git@bitbucket.org:seemywingz/dotfiles.git', dest: 'dotfiles'}
     - { src: 'https://github.com/robbyrussell/oh-my-zsh.git', dest: '../.oh-my-zsh'}
-    - { src: 'https://github.com/mbadolato/iTerm2-Color-Schemes.git', dest: '../.iTerm2-Color-Schemes'}
+    - { src: 'https://github.com/evrowe/panda-syntax-iterm.git', dest: 'panda-syntax-iterm'}
+    - { src: 'https://github.com/mbadolato/iTerm2-Color-Schemes.git', dest: 'iTerm2-Color-Schemes'}
   mac:
     sources:
       - { src: 'https://github.com/mbadolato/iTerm2-Color-Schemes.git', dest: '../.iTerm2-Color-Schemes'}
