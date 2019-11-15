@@ -15,7 +15,7 @@ dotfiles:
     - { src: 'terminals/terminator.config', dest: '.config/terminator/config'}
 
 repos:
-  local_dir: ~/repos
+  local_dir: ~/git
   sources:
     - { src: 'git@github.com:seemywingz/str.git', dest: 'str'}
     - { src: 'git@bitbucket.org:seemywingz/dotfiles.git', dest: 'dotfiles'}
@@ -68,21 +68,19 @@ ubuntu:
 
 mac:
   apps:
-    - 1password
     - docker
     - intellij-idea
     - iterm2
-    - java8
     - postman
     - sequel-pro
     - slack
     - spotify
     - steam
     - tunnelblick
-    - visual-studio-code-insiders
+    - visual-studio-code
     - google-chrome
-    # - zeplin
-    # - charles
+    - dashlane
+    # - 1password
     # - insomnia
     # - firefox
     # - viscosity

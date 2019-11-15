@@ -1,11 +1,11 @@
 # vim:ft=ansible
 
-- name: Install Brew Caskroom and Versions
-  command: "{{ item }}"
-  with_items:
-    - brew install caskroom/cask/brew-cask
-    - brew tap caskroom/versions
-  when: ansible_distribution == "MacOSX"
+# - name: Install Brew Caskroom and Versions
+#   command: "{{ item }}"
+#   with_items:
+#     - brew install caskroom/cask/brew-cask
+#     - brew tap caskroom/versions
+#   when: ansible_distribution == "MacOSX"
 
 - name: Install Caskroom Apps
   homebrew_cask:
@@ -39,11 +39,11 @@
 - name: Install Applications via Apt
   become: true
   apt:
-    pkg: "{{ item }}"
+    pkg: "{{ ubuntu.apt.apps }}"
     state: present
     update_cache: "yes"
-  with_items:
-    - "{{ ubuntu.apt.apps }}"
+  # with_items:
+  #   - "{{ ubuntu.apt.apps }}"
   when: ansible_distribution == "Ubuntu"
 
 - name: Install Applications via snap

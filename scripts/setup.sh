@@ -30,8 +30,9 @@ isInstalled () {
 if ! isInstalled ansible; then
   msg="Installing Ansible"
   echo ${msg}
-  sudo apt update
-  sudo apt install software-properties-common ansible -y
+  brew install ansible
+  # sudo apt update
+  # sudo apt install software-properties-common ansible -y
   exitOnError $? ${msg}
 fi
 

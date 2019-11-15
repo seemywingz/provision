@@ -2,19 +2,17 @@
 
 - name: Install CLI Tools via Homebrew
   homebrew:
-    pkg: "{{ item }}"
+    pkg: "{{ cli_tools }}"
     state: present
     update_homebrew: "yes"
-  with_items:
-    - "{{ cli_tools }}"
   when: ansible_distribution == "MacOSX"
 
 - name: Install CLI Tools via Apt
   become: true
   apt:
-    pkg: "{{ item }}"
+    pkg: "{{ cli_tools }}"
     state: present
     update_cache: "yes"
-  with_items:
-    - "{{ cli_tools }}"
+  # with_items:
+  #   - "{{ cli_tools }}"
   when: ansible_distribution == "Ubuntu"
