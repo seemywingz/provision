@@ -1,12 +1,5 @@
 # vim:ft=ansible
 
-# - name: Install Brew Caskroom and Versions
-#   command: "{{ item }}"
-#   with_items:
-#     - brew install caskroom/cask/brew-cask
-#     - brew tap caskroom/versions
-#   when: ansible_distribution == "MacOSX"
-
 - name: Install Caskroom Apps
   homebrew_cask:
     name: "{{item}}"
@@ -16,39 +9,65 @@
   ignore_errors: yes
   when: ansible_distribution == "MacOSX"
 
-- name: Accept Apt GPG Keys
+- name: Accept Apt Server GPG Keys
   become: true
   apt_key:
     url: "{{ item }}"
     state: present
   with_items:
-    - "{{ ubuntu.apt.gpg }}"
-  when: ansible_distribution == "Ubuntu"
+    - "{{ ubuntu.server.gpg }}"
+  when: ansible_distribution == "Ubuntu" and ubuntu.server.gpg is defined
 
-- name: Add Apt PPAs
+- name: Add Apt Server PPAs
   become: true
   apt_repository:
     repo: "{{ item }}"
     state: present
     update_cache: yes
   with_items:
-    - "{{ ubuntu.apt.ppa }}"
-  when: ansible_distribution == "Ubuntu"
+    - "{{ ubuntu.server.ppa }}"
+  when: ansible_distribution == "Ubuntu" and ubuntu.server.ppa is defined
 
-
-- name: Install Applications via Apt
+- name: Install Server Applications via Apt
   become: true
   apt:
-    pkg: "{{ ubuntu.apt.apps }}"
+    pkg: "{{ ubuntu.server.packages }}"
+    state: present
+    update_cache: "yes"
+  when: ansible_distribution == "Ubuntu"
+
+- name: Accept Apt Desktop GPG Keys
+  become: true
+  apt_key:
+    url: "{{ item }}"
+    state: present
+  with_items:
+    - "{{ ubuntu.desktop.gpg }}"
+  when: ansible_distribution == "Ubuntu" and 'remote' not in group_names
+
+- name: Add Apt Desktop PPAs
+  become: true
+  apt_repository:
+    repo: "{{ item }}"
+    state: present
+    update_cache: yes
+  with_items:
+    - "{{ ubuntu.desktop.ppa }}"
+  when: ansible_distribution == "Ubuntu" and 'remote' not in group_names
+
+- name: Install Desktop Applications via Apt
+  become: true
+  apt:
+    pkg: "{{ ubuntu.desktop.packages }}"
     state: present
     update_cache: "yes"
   # with_items:
   #   - "{{ ubuntu.apt.apps }}"
-  when: ansible_distribution == "Ubuntu"
+  when: ansible_distribution == "Ubuntu" and 'remote' not in group_names
 
-- name: Install Applications via snap
+- name: Install Applications via Snap
   become: true
   command: snap install "{{ item }}"
   with_items:
-    - "{{ ubuntu.snap.apps }}"
-  when: ansible_distribution == "Ubuntu"
+    - "{{ ubuntu.desktop.snap }}"
+  when: ansible_distribution == "Ubuntu" and 'remote' not in group_names

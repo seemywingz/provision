@@ -1,4 +1,7 @@
 # Inventory File for Ansible
 
-[machines]
+[local]
 localhost
+
+[remote]
+torch.cloud

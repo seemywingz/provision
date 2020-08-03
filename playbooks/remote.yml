@@ -1,8 +1,7 @@
 # EMN DevOps initializer
 
-- name: Provision Unix for Local Development
-  hosts: localhost
-  connection: local
+- name: Provision Unix Environment
+  hosts: remote
   gather_facts: true
   roles:
     - { role: cli, tags: [ 'init', 'cli' ]  }
