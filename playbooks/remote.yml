@@ -6,5 +6,5 @@
   roles:
     - { role: cli, tags: [ 'init', 'cli' ]  }
     - { role: apps, tags: [ 'init', 'apps' ]  }
-    # - { role: repos, tags: [ 'init', 'repos' ]  }
+    - { role: repos, tags: [ 'init', 'repos' ]  }
     # - { role: dotfiles, tags: [ 'init', 'dotfiles' ]  }

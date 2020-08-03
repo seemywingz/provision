@@ -5,7 +5,7 @@
     dest: "{{ repos.local_dir }}/{{ item.dest }}"
     accept_hostkey: yes
   with_items:
-    - "{{ repos.sources }}"
+    - "{{ repos.shared.sources }}"
 
 - name: Clone Mac Repositories
   git:
@@ -16,12 +16,11 @@
     - "{{ repos.mac.sources }}"
   when: ansible_distribution == "MacOSX"
 
-
-- name: Clone Ubuntu Repositories
-  git:
-    repo: "{{ item.src }}"
-    dest: "{{ repos.local_dir }}/{{ item.dest }}"
-    accept_hostkey: yes
-  with_items:
-    - "{{ repos.ubuntu.sources }}"
-  when: ansible_distribution == "Ubuntu"
+# - name: Clone Ubuntu Repositories
+#   git:
+#     repo: "{{ item.src }}"
+#     dest: "{{ repos.local_dir }}/{{ item.dest }}"
+#     accept_hostkey: yes
+#   with_items:
+#     - "{{ repos.ubuntu.sources }}"
+#   when: ansible_distribution == "Ubuntu"
