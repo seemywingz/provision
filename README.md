@@ -1,4 +1,4 @@
-Provision Local Mac OsX or Ubuntu
+Provision Local/Remote Mac OsX or Ubuntu
 =====================================
 ###### !! Make sure to watch the teminal during installation, your user password is required !! 
 # Prerequisites  
