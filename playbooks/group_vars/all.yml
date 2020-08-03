@@ -77,11 +77,11 @@ mac:
     - slack
     - spotify
     - steam
-    - tunnelblick
     - visual-studio-code
     - google-chrome
     - dashlane
     # - 1password
+    # - tunnelblick
     # - insomnia
     # - firefox
     # - viscosity
