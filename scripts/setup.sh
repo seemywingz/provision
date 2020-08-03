@@ -36,7 +36,7 @@ if ! isInstalled ansible; then
   exitOnError $? ${msg}
 fi
 
-ansiblePlaybook="playbooks/provision.yml"
+ansiblePlaybook="playbooks/local.yml"
 echo "Running Setup: ansible-playbook ${ansibleOptions} ${ansiblePlaybook} "
 ansible-playbook ${ansibleOptions} ${ansiblePlaybook} --ask-become-pass
 exitOnError $? "Running Ansible Playbook"

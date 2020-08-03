@@ -1,9 +1,9 @@
 initailSetupScript=~/inital-setup.sh
-setupScript=~/repos/local-provision/scripts/setup.sh
+setupScript=~/repos/provision/scripts/setup.sh
 cat > ${initailSetupScript} <<'EOF'
 #!/bin/bash
 
-localSetupRepo="git@bitbucket.org:seemywingz/local-provision.git"
+localSetupRepo="git@bitbucket.org:seemywingz/provision.git"
 repoDir=~/repos
 
 exitOnError () {
@@ -27,8 +27,8 @@ fi
 cd
 mkdir -p ${repoDir}
 cd ${repoDir}
-if [[ -d "local-provision" ]];then
-  cd local-provision
+if [[ -d "provision" ]];then
+  cd provision
   git pull
 else
   git clone ${localSetupRepo}

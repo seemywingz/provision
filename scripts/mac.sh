@@ -1,8 +1,8 @@
-initailSetupScript=~/redt-inital-setup.sh
+initailSetupScript=~/inital-setup.sh
 cat > ${initailSetupScript} <<'EOF'
 #!/bin/bash
 
-localSetupRepo="git@github.com:seemywingz/local-provision.git"
+localSetupRepo="git@github.com:seemywingz/provision.git"
 
 exitOnError () {
   exitCode=$1
@@ -35,8 +35,8 @@ fi
 cd
 mkdir -p git
 cd git
-if [[ -d "local-provision" ]];then
-  cd local-provision
+if [[ -d "provision" ]];then
+  cd provision
   git pull
 else
   git clone ${localSetupRepo}
