@@ -50,6 +50,7 @@ cli_tools:
 ubuntu:
   server:
     packages:
+      - nginx
       - gparted
       - apt-transport-https
       - openssh-server
