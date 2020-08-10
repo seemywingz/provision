@@ -8,7 +8,7 @@
   when: ansible_distribution == "MacOSX"
 
 - name: Install CLI Tools via Apt
-  become: true
+  become: yes
   apt:
     pkg: "{{ cli_tools }}"
     state: present

@@ -6,7 +6,7 @@
   with_items:
    - "{{ dotfiles.config.directories }}"
 
-- name: Link Dotfiles
+- name: Link Shared Dotfiles
   file:
     src: "{{ repos.local_dir }}/dotfiles/{{ item.src }}"
     dest: "~/{{ item.dest }}"
@@ -14,4 +14,26 @@
     force: no
     state: link
   with_items:
-    - "{{ dotfiles.sources }}"
+    - "{{ dotfiles.sources.shared }}"
+
+- name: Link Mac Dotfiles
+  file:
+    src: "{{ repos.local_dir }}/dotfiles/{{ item.src }}"
+    dest: "~/{{ item.dest }}"
+    mode: "0644"
+    force: no
+    state: link
+  with_items:
+    - "{{ dotfiles.sources.mac }}"
+  when: ansible_distribution == "MacOSX"
+
+- name: Link Ubuntu Dotfiles
+  file:
+    src: "{{ repos.local_dir }}/dotfiles/{{ item.src }}"
+    dest: "~/{{ item.dest }}"
+    mode: "0644"
+    force: no
+    state: link
+  with_items:
+    - "{{ dotfiles.sources.ubuntu }}"
+  when: ansible_distribution == "Ubuntu"

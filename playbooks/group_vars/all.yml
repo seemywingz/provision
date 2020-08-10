@@ -6,13 +6,17 @@ dotfiles:
       - ~/.config/nvim
       - ~/.config/terminator
   sources:
-    - { src: '.zshrc', dest: '.zshrc'}
-    - { src: '.vimrc', dest: '.vimrc'}
-    - { src: '.bashrc', dest: '.bashrc'}
-    - { src: '.Xmodmap', dest: '.Xmodmap'}
-    - { src: 'ssh.config', dest: '.ssh/config'}
-    - { src: 'init.vim', dest: '.config/nvim/init.vim'}
-    - { src: 'terminals/terminator.config', dest: '.config/terminator/config'}
+    shared:
+      - { src: '.vimrc', dest: '.vimrc'}
+      - { src: '.bashrc', dest: '.bashrc'}
+      - { src: 'ssh.config', dest: '.ssh/config'}
+      - { src: 'init.vim', dest: '.config/nvim/init.vim'}
+    mac:
+      - { src: '.zshrc', dest: '.zshrc'}
+    ubuntu:
+      - { src: '.Xmodmap', dest: '.Xmodmap'}
+      - { src: '.zshrc-ubuntu', dest: '.zshrc'}
+      - { src: 'terminals/terminator.config', dest: '.config/terminator/config'}
 
 repos:
   local_dir: ~/git
