@@ -13,6 +13,4 @@
     pkg: "{{ cli_tools }}"
     state: present
     update_cache: "yes"
-  # with_items:
-  #   - "{{ cli_tools }}"
   when: ansible_distribution == "Ubuntu"
