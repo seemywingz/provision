@@ -67,6 +67,7 @@ ubuntu:
       - snap
       - steam
       - terminator
+      - virtualbox 
     gpg:
       - "https://packages.microsoft.com/keys/microsoft.asc"
     ppa:

@@ -61,8 +61,6 @@
     pkg: "{{ ubuntu.desktop.packages }}"
     state: present
     update_cache: "yes"
-  # with_items:
-  #   - "{{ ubuntu.apt.apps }}"
   when: ansible_distribution == "Ubuntu" and 'remote' not in group_names
 
 - name: Install Applications via Snap
