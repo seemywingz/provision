@@ -67,7 +67,7 @@
 
 - name: Install Applications via Snap
   become: true
-  command: snap install "{{ item }}"
+  command: snap install --classic "{{ item }}"
   with_items:
     - "{{ ubuntu.desktop.snap }}"
   when: ansible_distribution == "Ubuntu" and 'remote' not in group_names

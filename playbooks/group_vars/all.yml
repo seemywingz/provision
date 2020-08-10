@@ -63,7 +63,7 @@ ubuntu:
     # ppa: 
   desktop:
     packages:
-      - code-insiders
+      # - code-insiders
       - snap
       - steam
       - terminator
@@ -73,6 +73,7 @@ ubuntu:
       - "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
     snap:
       - spotify
+      - code
 
 mac:
   apps:
