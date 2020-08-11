@@ -3,6 +3,7 @@
 dotfiles:
   config:
     directories:
+      - ~/.history
       - ~/.config/nvim
       - ~/.config/terminator
   sources:
