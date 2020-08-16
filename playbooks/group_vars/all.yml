@@ -78,17 +78,18 @@ ubuntu:
 
 mac:
   apps:
+    - dashlane
     - docker
-    - intellij-idea
+    - google-chrome
     - iterm2
+    - kubectx
     - postman
     - sequel-pro
     - slack
     - spotify
     - steam
     - visual-studio-code
-    - google-chrome
-    - dashlane
+    # - intellij-idea
     # - 1password
     # - tunnelblick
     # - insomnia
