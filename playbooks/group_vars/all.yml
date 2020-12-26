@@ -78,7 +78,7 @@ ubuntu:
 
 mac:
   apps:
-    - amazon-music
+    # - amazon-music
     - dashlane
     - docker
     - google-chrome
