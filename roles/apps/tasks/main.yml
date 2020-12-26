@@ -9,6 +9,11 @@
 #   ignore_errors: yes
 #   when: ansible_distribution == "MacOSX"
 
+- name: Install CLI Tools via Homebrew
+  homebrew:
+    update_homebrew: "yes"
+  when: ansible_distribution == "MacOSX"
+
 - name: Installs Caskroom Apps Workaround
   shell: "brew install {{ item }} --cask"
   with_items:
