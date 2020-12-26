@@ -9,7 +9,7 @@
 #   ignore_errors: yes
 #   when: ansible_distribution == "MacOSX"
 
-- name: Install CLI Tools via Homebrew
+- name: Update Homebrew
   homebrew:
     update_homebrew: "yes"
   when: ansible_distribution == "MacOSX"
