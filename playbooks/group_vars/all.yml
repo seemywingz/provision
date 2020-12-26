@@ -78,16 +78,17 @@ ubuntu:
 
 mac:
   apps:
+    - amazon-music
     - dashlane
     - docker
     - google-chrome
     - iterm2
-    - kubectx
-    - postman
+    # - postman
     - sequel-pro
     - slack
     - spotify
     - steam
+    - tidal
     - visual-studio-code
     # - intellij-idea
     # - 1password
