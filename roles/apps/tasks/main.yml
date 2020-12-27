@@ -18,6 +18,7 @@
   shell: "brew install {{ item }} --cask"
   with_items:
     - "{{ mac.apps }}"
+  ignore_errors: yes
   when: ansible_distribution == "MacOSX"
 
 - name: Accept Apt Server GPG Keys
