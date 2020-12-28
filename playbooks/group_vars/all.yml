@@ -90,6 +90,7 @@ mac:
     - spotify
     - steam
     - tidal
+    - twitch
     - visual-studio-code
     - qobuz
     # - intellij-idea
