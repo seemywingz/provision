@@ -39,6 +39,7 @@ cli_tools:
   - ctags
   - coreutils
   - curl 
+  - discord
   - git
   # - fswatch
   - htop
