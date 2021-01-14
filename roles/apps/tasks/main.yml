@@ -1,21 +1,22 @@
 # vim:ft=ansible
 
-# - name: Install Caskroom Apps
-#   homebrew_cask:
-#     name: "{{item}}"
-#     state: "present"
+# - name: Update Homebrew
+#   homebrew:
+#     update_homebrew: "yes"
+#   when: ansible_distribution == "MacOSX"
+
+# - name: Installs Caskroom Apps Workaround
+#   shell: "brew install {{ item }} --cask"
 #   with_items:
 #     - "{{ mac.apps }}"
 #   ignore_errors: yes
 #   when: ansible_distribution == "MacOSX"
-
-- name: Update Homebrew
-  homebrew:
-    update_homebrew: "yes"
-  when: ansible_distribution == "MacOSX"
-
-- name: Installs Caskroom Apps Workaround
-  shell: "brew install {{ item }} --cask"
+  
+- name: Install Caskroom Apps
+  homebrew_cask:
+    name: "{{item}}"
+    state: "present"
+    update_homebrew: yes
   with_items:
     - "{{ mac.apps }}"
   ignore_errors: yes

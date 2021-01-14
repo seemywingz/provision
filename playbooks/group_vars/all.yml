@@ -35,13 +35,11 @@ repos:
 
 cli_tools:
   - autojump
-  - awscli
+  # - awscli
   - ctags
   - coreutils
   - curl 
-  - discord
   - git
-  # - fswatch
   - htop
   - jq
   - neovim
@@ -50,8 +48,32 @@ cli_tools:
   - tree
   - watch
   - wget
-  # - yarn
   - zsh
+
+mac:
+  apps:
+    # - amazon-music
+    # - dashlane
+    # - docker
+    - google-chrome
+    - iterm2
+    # - postman
+    # - sequel-pro
+    - slack
+    # - spotify
+    # - steam
+    - tidal
+    # - twitch
+    - visual-studio-code
+    # - qobuz
+    # - intellij-idea
+    # - 1password
+    # - tunnelblick
+    # - insomnia
+    # - firefox
+    # - viscosity
+    # - virtualbox
+    # - vagrant
 
 ubuntu:
   server:
@@ -77,27 +99,3 @@ ubuntu:
     snap:
       - spotify
 
-mac:
-  apps:
-    # - amazon-music
-    - dashlane
-    - docker
-    - google-chrome
-    - iterm2
-    # - postman
-    - sequel-pro
-    - slack
-    - spotify
-    - steam
-    - tidal
-    - twitch
-    - visual-studio-code
-    - qobuz
-    # - intellij-idea
-    # - 1password
-    # - tunnelblick
-    # - insomnia
-    # - firefox
-    # - viscosity
-    # - virtualbox
-    # - vagrant
