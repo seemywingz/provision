@@ -49,6 +49,7 @@ cli_tools:
   - shellcheck
   - tree
   - watch
+  - wakeonlan
   - wget
   # - yarn
   - zsh
