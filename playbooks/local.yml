@@ -1,4 +1,4 @@
-# EMN DevOps initializer
+# Provision Local Machines
 
 - name: Provision Unix for Local Development
   hosts: localhost

@@ -1,4 +1,4 @@
-# EMN DevOps initializer
+# Provision Remote Machines
 
 - name: Provision Unix Environment
   hosts: remote
