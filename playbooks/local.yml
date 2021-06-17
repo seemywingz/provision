@@ -1,6 +1,6 @@
 # Provision Local Machines
 
-- name: Provision Unix for Local Development
+- name: Provision Local Environment(s)
   hosts: localhost
   connection: local
   gather_facts: true

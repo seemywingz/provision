@@ -1,6 +1,6 @@
 # Provision Remote Machines
 
-- name: Provision Unix Environment
+- name: Provision Remote Environment(s)
   hosts: remote
   gather_facts: true
   roles:
