@@ -4,4 +4,5 @@
 localhost
 
 [remote]
-torch.cloud
+#torch.cloud
+mac-mini
