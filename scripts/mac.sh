@@ -22,7 +22,6 @@ if ! isInstalled brew; then
   exitOnError $? ${msg}
   brew update
   brew doctor
-  brew prune
 fi
 
 if ! isInstalled git; then
