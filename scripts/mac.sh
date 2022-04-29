@@ -22,7 +22,6 @@ if ! isInstalled brew; then
   exitOnError $? ${msg}
   brew update
   brew doctor
-  brew prune
 fi
 
 if ! isInstalled git; then
@@ -32,15 +31,16 @@ if ! isInstalled git; then
   exitOnError $? ${msg}
 fi
 
-cd
-mkdir -p git
-cd git
-if [[ -d "provision" ]];then
-  cd provision
-  git pull
-else
-  git clone ${localSetupRepo}
-fi
+#cd
+#mkdir -p git
+#cd git
+#if [[ -d "provision" ]];then
+#  cd provision
+#  git pull
+#else
+#  git clone ${localSetupRepo}
+#fi
+
 EOF
 chmod +x ${initailSetupScript}
 ${initailSetupScript}
