@@ -42,6 +42,8 @@ cli_tools:
   - git
   - htop
   - jq
+  - kubectl
+  - kubectx
   - neovim
   - nmap
   - shellcheck
@@ -54,8 +56,8 @@ mac:
   apps:
     # - 1password
     # - amazon-music
-    - dashlane
     # - docker
+    # - discord
     # - firefox
     - google-chrome
     # - insomnia
@@ -65,7 +67,7 @@ mac:
     # - qobuz
     # - sequel-pro
     - slack
-    # - spotify
+    - spotify
     # - steam
     - tidal
     # - tunnelblick
