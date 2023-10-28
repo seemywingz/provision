@@ -48,6 +48,7 @@ cli_tools:
   - coreutils
   - curl 
   - git
+  - golang
   - helm
   - htop
   - jq
