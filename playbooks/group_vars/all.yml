@@ -26,12 +26,14 @@ repos:
       # - { src: 'git@github.com:seemywingz/str.git', dest: 'str'}
       - { src: 'https://github.com/seemywingz/in3D.git', dest: 'in3d'}
       - { src: 'https://github.com/seemywingz/goai.git', dest: 'goai'}
-      - { src: 'git@github.com:seemywingz/dotfiles.git', dest: 'dotfiles'}
-      - { src: 'https://github.com/seemywingz/ponder.git', dest: 'ponder'}
-      - { src: 'https://github.com/seemywingz/arduino.git', dest: 'arduino'}
       - { src: 'https://github.com/robbyrussell/oh-my-zsh.git', dest: '../.oh-my-zsh'}
-      - { src: 'https://github.com/seemywingz/ESPWiFi.git', dest: '../Documents/Arduino.libraries'}
       - { src: 'https://github.com/mbadolato/iTerm2-Color-Schemes.git', dest: 'iTerm2-Color-Schemes'}
+      - { src: 'git@github.com:seemywingz/str.git', dest: 'str'}
+      - { src: 'git@github.com:seemywingz/ponder.git', dest: 'ponder'}
+      - { src: 'git@github.com:seemywingz/arduino.git', dest: 'arduino'}
+      - { src: 'git@github.com:seemywingz/dotfiles.git', dest: 'dotfiles'}
+      - { src: 'git@github.com:seemywingz/arduino_libs.git', dest: '../Documents/Arduino.libraries'}
+      - { src: 'git@github.com:seemywingz/ESPWiFi.git', dest: '../Documents/Arduino.libraries/ESPWiFi'}
   mac:
     sources:
       - { src: 'https://github.com/evrowe/panda-syntax-iterm.git', dest: 'panda-syntax-iterm'}
