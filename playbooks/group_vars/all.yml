@@ -24,8 +24,13 @@ repos:
   shared:
     sources:
       # - { src: 'git@github.com:seemywingz/str.git', dest: 'str'}
+      - { src: 'https://github.com/seemywingz/in3D.git', dest: 'in3d'}
+      - { src: 'https://github.com/seemywingz/goai.git', dest: 'goai'}
       - { src: 'git@github.com:seemywingz/dotfiles.git', dest: 'dotfiles'}
+      - { src: 'https://github.com/seemywingz/ponder.git', dest: 'ponder'}
+      - { src: 'https://github.com/seemywingz/arduino.git', dest: 'arduino'}
       - { src: 'https://github.com/robbyrussell/oh-my-zsh.git', dest: '../.oh-my-zsh'}
+      - { src: 'https://github.com/seemywingz/ESPWiFi.git', dest: '../Documents/Arduino.libraries'}
       - { src: 'https://github.com/mbadolato/iTerm2-Color-Schemes.git', dest: 'iTerm2-Color-Schemes'}
   mac:
     sources:
@@ -35,7 +40,9 @@ repos:
 
 cli_tools:
   - autojump
+  - arduino-cli
   # - awscli
+  - btop
   - ctags
   - coreutils
   - curl 
@@ -56,8 +63,9 @@ mac:
   apps:
     # - 1password
     # - amazon-music
-    # - docker
-    # - discord
+    - arduino-ide
+    - docker
+    - discord
     # - firefox
     - google-chrome
     # - insomnia
@@ -68,8 +76,8 @@ mac:
     # - sequel-pro
     - slack
     - spotify
-    # - steam
-    - tidal
+    - steam
+    # - tidal
     # - tunnelblick
     # - twitch
     # - vagrant
