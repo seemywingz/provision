@@ -74,6 +74,7 @@ mac:
     # - insomnia
     # - intellij-idea
     - iterm2
+    - lens
     # - postman
     # - qobuz
     # - sequel-pro
