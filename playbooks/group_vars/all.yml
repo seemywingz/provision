@@ -87,6 +87,7 @@ mac:
     # - vagrant
     # - virtualbox
     - visual-studio-code
+    - vlc
     # - viscosity
 
 ubuntu:
