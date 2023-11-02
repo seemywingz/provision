@@ -42,7 +42,7 @@ repos:
 cli_tools:
   - autojump
   - arduino-cli
-  # - awscli
+  - awscli
   - btop
   - ctags
   - coreutils
@@ -75,8 +75,8 @@ mac:
     # - intellij-idea
     - iterm2
     - lens
+    - logitech-g-hub
     # - postman
-    # - qobuz
     # - sequel-pro
     - slack
     - spotify
@@ -88,7 +88,6 @@ mac:
     # - virtualbox
     - visual-studio-code
     - vlc
-    # - viscosity
 
 ubuntu:
   server:

@@ -2,31 +2,34 @@
 rootDir="$(cd "$(dirname "$0")" && pwd)"
 cd ${rootDir}/..
 ansibleOptions=""
-while getopts 't:e:' flag; do
+while getopts 't:e:' flag; do # getopts is a function to parse arguments passed to the script
   case "${flag}" in
-    t) 
-      ansibleOptions="${ansibleOptions} --tags ${OPTARG}"
-      ;;
-    e) 
-      ansibleOptions="${ansibleOptions} --skip-tags ${OPTARG}"
-      ;;
-    *) 
-      error "Unexpected option ${flag}" 
-      ;;
+  t) # tag
+    ansibleOptions="${ansibleOptions} --tags ${OPTARG}"
+    ;;
+  e) # exclude tag
+    ansibleOptions="${ansibleOptions} --skip-tags ${OPTARG}"
+    ;;
+  *)
+    error "Unexpected option ${flag}"
+    ;;
   esac
-done	
+done
 
-exitOnError () {
+# Exit on error
+exitOnError() {
   exitCode=$1
   errorMessage=$2
-  [[ $1 -gt 0 ]] && (echo "Error: ${2}" && exit 1) ||:
+  [[ $1 -gt 0 ]] && (echo "Error: ${2}" && exit 1) || :
 }
 
-isInstalled () {
+# Check if a command exists
+isInstalled() {
   app=$1
   [[ -x "$(command -v ${app})" ]] && true || false
 }
 
+# Check if Ansible is installed
 if ! isInstalled ansible; then
   msg="Installing Ansible"
   echo ${msg}
