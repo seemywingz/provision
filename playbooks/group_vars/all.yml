@@ -69,6 +69,7 @@ mac:
     - arduino-ide
     - docker
     - discord
+    - freecad
     # - firefox
     - google-chrome
     # - insomnia
