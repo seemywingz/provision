@@ -64,9 +64,8 @@ cli_tools:
 
 mac:
   apps:
-    # - 1password
-    # - amazon-music
     - arduino-ide
+    - blender
     - docker
     - discord
     - freecad
@@ -82,11 +81,7 @@ mac:
     - slack
     - spotify
     - steam
-    # - tidal
     # - tunnelblick
-    # - twitch
-    # - vagrant
-    # - virtualbox
     - visual-studio-code
     - vlc
 
